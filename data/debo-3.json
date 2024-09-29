@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "debo",
+  "risk": "3",
+  "title": "Account has Lack of Authorisation Control that Allows Arbitrary Account Creation",
+  "issueId": 3,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/3"
+}
