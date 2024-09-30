@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "debo",
+  "risk": "2",
+  "title": "utils has denial of service dos due to unbounded loops in the initialize_jumpdests function",
+  "issueId": 6,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/6"
+}
