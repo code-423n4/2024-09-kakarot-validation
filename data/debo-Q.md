@@ -1,5 +1,5 @@
 ## Uninitialized Memory Access
-
+## https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/utils/bytes.cairo
 **Severity**: Low  
 **Issue Type**: Uninitialized Storage Pointer
 
@@ -45,15 +45,10 @@ func felt_to_ascii{range_check_ptr}(dst: felt*, n: felt) -> felt {
     // Rest of the function...
 }
 ```
-
-### References
-
-- [Cairo Memory Management](https://www.cairo-lang.org/docs/advanced/memory-management.html)
-- [Uninitialized Storage Variables](https://consensys.github.io/smart-contract-best-practices/known_attacks/#uninitialized-storage-pointer)
-
 ---
 
 ## Potential Integer Overflow in Calculations
+## https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/utils/bytes.cairo
 
 **Severity**: Low  
 **Issue Type**: Arithmetic Issues
@@ -78,10 +73,6 @@ tempvar value = (value - byte) / base;
 If `value` is less than `byte`, this subtraction can underflow.
 
 ### Mitigation
-
-Add checks to ensure arithmetic operations are safe:
-
-- **Use Safe Math Libraries**: Utilize functions that handle overflows.
 - **Add Assertions**: Ensure values are within expected ranges before operations.
 
 ### Code Fix
@@ -92,15 +83,10 @@ with_attr error_message("Underflow detected") {
 }
 tempvar value = (value - byte) / base;
 ```
-
-### References
-
-- [Integer Overflow and Underflow](https://consensys.github.io/smart-contract-best-practices/development-recommendations/solidity-specific/integer-overflow-and-underflow/)
-- [Cairo Safe Math](https://www.cairo-lang.org/docs/)
-
 ---
 
 ## Missing Error Handling for Division by Zero
+## https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/utils/bytes.cairo
 
 **Severity**: Informational  
 **Issue Type**: Error Handling
@@ -132,10 +118,6 @@ with_attr error_message("Division by zero") {
     assert_not_zero(base);
 }
 ```
-
-### References
-
-- [Error Handling Patterns](https://docs.soliditylang.org/en/v0.8.7/control-structures.html#error-handling-assert-require-revert-and-exceptions)
-- [Cairo Assert Statements](https://www.cairo-lang.org/docs/how_cairo_works/builtins_and_assertions.html)
+---
 
 ---
