@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "0xastronatey",
+  "risk": "3",
+  "title": "Incorrectly Skipped Memory Writes in RETURNDATACOPY",
+  "issueId": 12,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/12"
+}
