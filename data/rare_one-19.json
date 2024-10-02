@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "rare_one",
+  "risk": "2",
+  "title": "Lack of Range Check for Division Operation in unsigned_div_rem(Arithmetic Overflow)",
+  "issueId": 19,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/19"
+}
