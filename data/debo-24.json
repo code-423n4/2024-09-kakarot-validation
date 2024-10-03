@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "debo",
+  "risk": "3",
+  "title": "Stack is missing range checks in stack operations leading to underflow and memory corruption",
+  "issueId": 24,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/24"
+}
