@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "eta",
+  "risk": "3",
+  "title": "Potential Gas Miscalculation in `compute_message_call_gas` Function Could Lead to Insufficient Gas Allocation and Security Risks",
+  "issueId": 23,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/23"
+}
