@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "debo",
+  "risk": "2",
+  "title": "State has EVM equivalence issue where self-transfers are ignored in add_transfer function",
+  "issueId": 29,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/29"
+}
