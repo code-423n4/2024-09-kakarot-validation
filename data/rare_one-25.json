@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "rare_one",
+  "risk": "3",
+  "title": "Unbounded Recursion in func decode_raw",
+  "issueId": 25,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/25"
+}
