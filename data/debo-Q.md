@@ -70,7 +70,7 @@ An attacker could provide a calldata_len that does not match the actual length o
 Ensure that calldata_len matches the actual length of calldata provided.
 ```Cairo
 // Add appropriate checks or validations as per the contract's context
-if (calldata_len != calldata.length) {
+if (calldata_len != calldata.len) {
    return ()
 }
 ```
