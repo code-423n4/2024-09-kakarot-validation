@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "KOLKATA",
+  "risk": "2",
+  "title": "Using uninitialized variables. Uninitialized variables can lead to unpredictable behavior of the program or execution errors.",
+  "issueId": 36,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/36"
+}
