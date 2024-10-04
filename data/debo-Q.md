@@ -30,7 +30,7 @@ with_attr error_message("packed_tx_data_len must be greater than 1") {
 	•	Severity Level: Low
 	•	Issue Type: Under-constrained computations
 
-### [L2] Missing Data Unpacking Validations in execute_starknet_call
+# [L2] Missing Data Unpacking Validations in execute_starknet_call
 
 ### Impact 
 Lack of validations when unpacking data can lead to incorrect execution if the inputs are malformed.
@@ -76,3 +76,95 @@ if (calldata_len != calldata.len) {
 ```
 	•	Severity Level: Low
 	•	Issue Type: Data unpacking
+
+# [L3] Missing Boolean Range Check on authorized Parameter in set_authorized_cairo_precompile_caller
+
+### Impact
+The set_authorized_cairo_precompile_caller function accepts an authorized parameter of type felt but does not enforce that it should be either TRUE (1) or FALSE (0). If an unintended value is provided, it may lead to unexpected behavior in authorization logic, potentially causing security issues or logic errors.
+
+### Location
+    •    Function: set_authorized_cairo_precompile_caller
+    •    File: Kakarot.Cairo
+
+### Line
+```txt
+https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/kakarot/kakarot.cairo#L234-L239
+```
+```Cairo
+@external
+func set_authorized_cairo_precompile_caller{
+    syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr
+}(evm_address: felt, authorized: felt) {
+    Ownable.assert_only_owner();
+    return Kakarot.set_authorized_cairo_precompile_caller(evm_address, authorized);
+}
+```
+
+### Proof of Concept (PoC)
+An attacker with ownership privileges could call the function with an unintended authorized value:
+```Cairo
+// Setting authorized to an unintended value
+await kakarot_contract.set_authorized_cairo_precompile_caller(evm_address, 42)
+```
+This could bypass authorization checks if the underlying logic treats any non-zero value as TRUE.
+
+### Recommended Mitigation Steps
+Add a check to ensure that authorized is either TRUE (1) or FALSE (0):
+```Cairo
+@external
+func set_authorized_cairo_precompile_caller{
+    syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr
+}(evm_address: felt, authorized: felt) {
+    Ownable.assert_only_owner();
+    assert (authorized == TRUE) or (authorized == FALSE), 'authorized must be TRUE or FALSE';
+    return Kakarot.set_authorized_cairo_precompile_caller(evm_address, authorized);
+}
+```
+Alternatively, define the authorized parameter as a boolean type if supported.
+
+# [L4] Missing Address Validation in Functions Accepting Addresses Allows Setting Invalid Addresses
+
+### Impact
+Functions like set_coinbase, set_native_token, set_account_contract_class_hash, and others accept address parameters but do not validate that these addresses are valid (e.g., within the correct range for StarkNet addresses). This could allow the owner—or an attacker who gains control over the owner’s account—to set invalid addresses, potentially causing failures in other parts of the system that rely on these addresses.
+
+### Location
+    •    Functions: set_coinbase, set_native_token, set_account_contract_class_hash, etc.
+    •    File: Kakarot.Cairo
+    •    Lines:
+```txt
+set_coinbase:
+https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/kakarot/kakarot.cairo#L140-L143
+
+set_native_token:
+https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/kakarot/kakarot.cairo#L103-L108
+
+set_account_contract_class_hash:
+https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/kakarot/kakarot.cairo#L204-L209
+```
+### Example of set_coinbase:
+```Cairo
+@external
+func set_coinbase{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(coinbase: felt) {
+    Ownable.assert_only_owner();
+    return Kakarot.set_coinbase(coinbase);
+}
+```
+
+### Proof of Concept (PoC)
+An attacker could set an invalid address:
+```Cairo
+// Setting coinbase to an invalid address
+await kakarot_contract.set_coinbase(2**251 + 1)
+```
+This could cause failures when the coinbase address is used in other contract operations.
+
+### Recommended Mitigation Steps
+Add checks to validate that the addresses provided are within the valid range for StarkNet addresses (e.g., less than 2**251):
+```Cairo
+@external
+func set_coinbase{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(coinbase: felt) {
+    Ownable.assert_only_owner();
+    assert coinbase < 2**251, 'Invalid coinbase address';
+    return Kakarot.set_coinbase(coinbase);
+}
+```
