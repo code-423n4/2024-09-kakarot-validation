@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "debo",
+  "risk": "2",
+  "title": "ETH_RPC has Missing Range Checks on tx.gas_limit and tx.max_fee_per_gas",
+  "issueId": 33,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/33"
+}
