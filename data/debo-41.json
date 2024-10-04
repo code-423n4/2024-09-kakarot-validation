@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "debo",
+  "risk": "2",
+  "title": "Kakarot has Missing Range Check on base_fee in set_base_fee Allows Setting Unintended Values",
+  "issueId": 41,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/41"
+}
