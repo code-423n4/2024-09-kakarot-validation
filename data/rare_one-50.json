@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "rare_one",
+  "risk": "2",
+  "title": "Inconsistency in storage updates due to cached keys",
+  "issueId": 50,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/50"
+}
