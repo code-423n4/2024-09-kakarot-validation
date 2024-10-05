@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "3",
+  "title": "y_parity is incorrectly calculated according to EIP-155",
+  "issueId": 45,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/45"
+}
