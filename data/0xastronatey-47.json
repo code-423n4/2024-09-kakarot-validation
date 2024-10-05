@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "0xastronatey",
+  "risk": "3",
+  "title": "Missing enforcement of Lower s Value allows for malleability",
+  "issueId": 47,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/47"
+}
