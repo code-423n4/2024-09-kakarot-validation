@@ -168,3 +168,62 @@ func set_coinbase{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_pt
     return Kakarot.set_coinbase(coinbase);
 }
 ```
+
+# [L5] Data Packing/Unpacking Issue with prev_randao in get_env Function
+
+Severity: Low
+Issue Type: Data Packing/Unpacking Issue
+
+### Impact
+Incorrect data handling when packing or unpacking the prev_randao variable can lead to unexpected behavior or bugs in the environment setup, potentially affecting any computations or logic that rely on it.
+
+### Location
+Starknet.get_env function, lines where prev_randao is reconstructed.
+```txt
+https://github.com/kkrt-labs/kakarot/blob/697100af34444b3931c18596cec56c454caf28ed/src/backend/starknet.cairo#L106-L130
+```
+
+### Code Snippet
+```Cairo
+// From Starknet.get_env
+let (prev_randao) = Kakarot_prev_randao.read();
+
+// No idea why this is required - but trying to pass prev_randao directly causes bugs.
+let prev_randao = Uint256(low=prev_randao.low, high=prev_randao.high);
+
+return new model.Environment(
+    origin=origin,
+    gas_price=gas_price,
+    chain_id=chain_id,
+    prev_randao=prev_randao,
+    block_number=block_number,
+    block_gas_limit=block_gas_limit,
+    block_timestamp=block_timestamp,
+    coinbase=coinbase,
+    base_fee=base_fee,
+);
+```
+
+### Description
+The prev_randao variable is read and then immediately reconstructed using its low and high components. The comment indicates uncertainty about why this reconstruction is necessary and mentions bugs when passing prev_randao directly. This suggests potential issues with data packing or unpacking, which can lead to incorrect values being used in the Environment structure.
+
+### Proof of Concept
+If prev_randao is not properly handled, it may not correctly represent the intended 256-bit value, causing functions that rely on it to behave unexpectedly.
+
+### Recommended Mitigation
+Investigate the underlying issue that necessitates reconstructing prev_randao. Ensure that the Kakarot_prev_randao.read() function returns a correctly structured Uint256 and that the Environment constructor accepts it without requiring reconstruction.
+```Cairo
+// Potential mitigation in Starknet.get_env
+let (prev_randao) = Kakarot_prev_randao.read();
+return new model.Environment(
+    origin=origin,
+    gas_price=gas_price,
+    chain_id=chain_id,
+    prev_randao=prev_randao,  // Pass directly if possible
+    block_number=block_number,
+    block_gas_limit=block_gas_limit,
+    block_timestamp=block_timestamp,
+    coinbase=coinbase,
+    base_fee=base_fee,
+);
+```
