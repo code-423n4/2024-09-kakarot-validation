@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "rare_one",
+  "risk": "2",
+  "title": "Unchecked Return Value from fetch_balance Leading to Uninitialized Pointer Dereference",
+  "issueId": 70,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/70"
+}
