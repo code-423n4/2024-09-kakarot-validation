@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "lightoasis",
+  "risk": "3",
+  "title": "Attackers can steal user's tokens because there is no check for token approval in `transferFrom`.",
+  "issueId": 63,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/63"
+}
