@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "eta",
+  "risk": "2",
+  "title": "Critical Impact of Implementation in DualVmToken.sol's Approve Function",
+  "issueId": 76,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/76"
+}
