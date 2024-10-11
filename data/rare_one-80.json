@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "rare_one",
+  "risk": "2",
+  "title": "Incorrect Stack Initialization Due to Duplicate Pointer Assignment",
+  "issueId": 80,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/80"
+}
