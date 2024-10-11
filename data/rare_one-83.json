@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "rare_one",
+  "risk": "3",
+  "title": "Missing Allowance Check in transferFrom Functions",
+  "issueId": 83,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/83"
+}
