@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "Davymutinda77",
+  "risk": "2",
+  "title": "The function processes messages from Layer 1 without sufficient validation, creating a potential vulnerability where an attacker could send malformed or malicious messages.",
+  "issueId": 86,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/86"
+}
