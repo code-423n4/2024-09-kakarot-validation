@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "3",
+  "title": "Nonce is mistakenly checked against the caller address even if it's a relayer",
+  "issueId": 84,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/84"
+}
