@@ -14,7 +14,7 @@ This impacts all of the files implementing the precompiles specified above, a co
 - `kakarot-ssj`: https://github.com/kkrt-labs/kakarot-ssj/tree/main/crates/evm/src/precompiles
 - `kakarot`: https://github.com/kkrt-labs/kakarot/tree/7411a5520e8a00be6f5243a50c160e66ad285563/src/kakarot/precompiles
 
-These operations could save a significant amount of gas / execution cost on the existing kakarot implementations on the CairoVM.
+These operations can easily save a significant amount of gas / execution cost on the existing kakarot implementations on the CairoVM, when an `EVMError::OutOfGas` occurs.
 
 ### Details
 
