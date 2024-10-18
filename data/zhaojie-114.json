@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "zhaojie",
+  "risk": "2",
+  "title": "During transaction signature verification, the chain id is not verified to be empty",
+  "issueId": 114,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/114"
+}
