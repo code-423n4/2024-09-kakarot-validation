@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "zhaojie",
+  "risk": "3",
+  "title": "_emit_events does not record the evm contract from which the event was issued",
+  "issueId": 116,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/116"
+}
