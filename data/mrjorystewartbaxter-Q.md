@@ -4,7 +4,7 @@ The `pow()` function in the `Exponentiation` from `math.cairo` (https://github.c
 
 ## **Vulnerability Details**  
 
-The `pow()` function expects an **unsigned integer** as the base, and the current test cases only account for unsigned inputs. Although the function doesn't directly accept signed integers, an edge case arises when a negative signed integer is **converted to an unsigned integer**. This scenario isn't covered in the tests, which could result in unexpected behavior.
+The `pow()` function expects an **unsigned integer** as the base, and the current test cases only account for unsigned inputs. Although the function doesn't directly accept signed integers, an edge case arises when a negative signed integer is **converted to an unsigned integer**. This scenario isn't handled in the tests, which could result in unexpected behavior.
 
 ### **Explanation:**
 
@@ -32,9 +32,9 @@ Consider this test case in `test_pow()`:
 
 ```rust
 fn test_pow() {
-    let positive_signed: i32 = -50; // Negative value converted to unsigned
+    let positive_signed: i32 = -50; // Negative value that is converted to unsigned
     let unsigned_from_positive: u32 = positive_signed.try_into().unwrap();
-
+    // Calling the pow function normally, but it will panic
     assert(unsigned_from_positive.pow(0) == 1, "n^0 should be 1");
 }
 ```
