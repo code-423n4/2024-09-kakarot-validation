@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "13u9",
+  "risk": "3",
+  "title": "The `caller address` of `eth_send_raw_unsigned_tx` called through `execute_from_outside` is different from the `tx.origin` address.",
+  "issueId": 124,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/124"
+}
