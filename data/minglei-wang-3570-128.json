@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "minglei-wang-3570",
+  "risk": "3",
+  "title": "Malicious user can revoke native ERC20 token allowance to trigger unhandled panic when the code commits the state.",
+  "issueId": 128,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/128"
+}
