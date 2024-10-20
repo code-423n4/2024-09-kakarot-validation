@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "NexusAudits",
+  "risk": "2",
+  "title": "Flawed Byte-to-uint256 Conversion in L1KakarotMessaging Enables Cross-Layer Message Spoofing",
+  "issueId": 132,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/132"
+}
