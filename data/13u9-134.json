@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "13u9",
+  "risk": "3",
+  "title": "In the case of a non-deploy transaction, the nonce of the `env.origin` EVM account does not increase.",
+  "issueId": 134,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/134"
+}
