@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "MrxSnowden",
+  "risk": "2",
+  "title": "Potential Infinite Recursion Leading to Gas Exhaustion in Recursive Functions",
+  "issueId": 137,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/137"
+}
