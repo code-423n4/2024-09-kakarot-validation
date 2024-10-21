@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "kirill_taran",
+  "risk": "2",
+  "title": "Incorrect ByteArray can be deserialized",
+  "issueId": 138,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/138"
+}
