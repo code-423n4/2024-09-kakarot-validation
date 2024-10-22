@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "ihuntpackets",
+  "risk": "3",
+  "title": "Integer overflow in eth_rpc.cairo in 2024-09-kakarot/kakarot-ssj/crates/contracts/src/kakarot_core/eth_rpc.cairo",
+  "issueId": 152,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/152"
+}
