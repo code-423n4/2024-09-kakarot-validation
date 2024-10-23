@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "0xtomsmith",
+  "risk": "3",
+  "title": "Potential overflow in the function is_account_alive()",
+  "issueId": 194,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/194"
+}
