@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "bhatmuneeb",
+  "risk": "2",
+  "title": "Unchecked Return Value from dict_write in Multiple Locations",
+  "issueId": 169,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/169"
+}
