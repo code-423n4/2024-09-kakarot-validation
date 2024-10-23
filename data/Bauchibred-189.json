@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "ECADD/ECMUL's implementation deviates from Ethereum's VM",
+  "issueId": 189,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/189"
+}
