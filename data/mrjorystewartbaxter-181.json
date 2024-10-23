@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "mrjorystewartbaxter",
+  "risk": "2",
+  "title": "Incorrect Handling of Signed Integer Conversion in `pow()` Function Can Lead to Panics",
+  "issueId": 181,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/181"
+}
