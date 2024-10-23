@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "bhatmuneeb",
+  "risk": "3",
+  "title": "Ownership Takeover Due to Lack of Input Validation in transfer_ownership",
+  "issueId": 174,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/174"
+}
