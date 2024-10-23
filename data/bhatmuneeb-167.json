@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "bhatmuneeb",
+  "risk": "2",
+  "title": "Lack of Input Validation in compute_code_hash",
+  "issueId": 167,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/167"
+}
