@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "ecrecover precompile can never be called",
+  "issueId": 196,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/196"
+}
