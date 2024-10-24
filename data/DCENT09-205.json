@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Unrestricted delegatecall that can lead to complete loss of control over the calling contract's state, leading to significant financial and functional damage",
+  "issueId": 205,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/205"
+}
