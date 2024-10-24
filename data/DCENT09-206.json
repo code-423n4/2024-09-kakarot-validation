@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Missing Fallback for staticcallCairo which can cause the transaction to fail unexpectedly without clear error handling. ",
+  "issueId": 206,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/206"
+}
