@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Out-of-Range div Value might result in incorrect calculations or potential data corruption, depending on Cairo’s error-handling.",
+  "issueId": 274,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/274"
+}
