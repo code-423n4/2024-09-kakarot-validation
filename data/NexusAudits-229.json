@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "NexusAudits",
+  "risk": "2",
+  "title": "Missing Contract Existence Checks Lead to Silent Failures in L1-L2 Communication",
+  "issueId": 229,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/229"
+}
