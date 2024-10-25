@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Reentrancy Attacks causing state locking, check-effects-interactions pattern",
+  "issueId": 251,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/251"
+}
