@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "ulas",
+  "risk": "2",
+  "title": "In L1KakarotMessaging, address alias is applied to all addresses leading to DoS in Kakarot EVM. ",
+  "issueId": 275,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/275"
+}
