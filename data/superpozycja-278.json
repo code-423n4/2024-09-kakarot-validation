@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "superpozycja",
+  "risk": "2",
+  "title": "Underflow in charge_gas() could lead to a transaction being executed indefinitely",
+  "issueId": 278,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/278"
+}
