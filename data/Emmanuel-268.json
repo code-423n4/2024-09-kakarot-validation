@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "Emmanuel",
+  "risk": "2",
+  "title": "Throughout the codebase, kakarot instructions deals with uint128 offset values, but geth deals with uint64 values.",
+  "issueId": 268,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/268"
+}
