@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "Transient storage is not reset at the beginning of transaction execution",
+  "issueId": 221,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/221"
+}
