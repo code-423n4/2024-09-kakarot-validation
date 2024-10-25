@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "eta",
+  "risk": "2",
+  "title": "Mitigating Caller Address Risks in StarkNet’s `eth_send_transaction` Function",
+  "issueId": 236,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/236"
+}
