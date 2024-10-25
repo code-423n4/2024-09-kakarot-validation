@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Overflow in Cairo's PRIME Field could result in incorrect outputs that violate the function’s assumptions.",
+  "issueId": 276,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/276"
+}
