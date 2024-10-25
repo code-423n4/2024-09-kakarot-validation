@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "zhaojie",
+  "risk": "3",
+  "title": "execute_starknet_call can be used for reentrant attacks",
+  "issueId": 211,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/211"
+}
