@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "3",
+  "title": "Karakot VM does not follow EIP-3651 making the coinbase payments more expensive for users",
+  "issueId": 227,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/227"
+}
