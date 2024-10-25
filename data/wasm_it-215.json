@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "wasm_it",
+  "risk": "3",
+  "title": "No overflow prevention in `interpreter::execute()` leading to attacker bypassing execution gas cost",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/215"
+}
