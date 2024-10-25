@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "xiao",
+  "risk": "2",
+  "title": "Use iteration instead of recursion in the parse_storage_keys function",
+  "issueId": 266,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/266"
+}
