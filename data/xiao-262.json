@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "xiao",
+  "risk": "2",
+  "title": "Insufficient validation of items_len",
+  "issueId": 262,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/262"
+}
