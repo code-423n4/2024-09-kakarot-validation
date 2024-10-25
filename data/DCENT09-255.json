@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Integer Overflow/Underflow can lead to loss of funds, resource exhaustion, incorrect transaction processing",
+  "issueId": 255,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/255"
+}
