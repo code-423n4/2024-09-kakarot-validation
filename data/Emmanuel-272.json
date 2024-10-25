@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "Emmanuel",
+  "risk": "3",
+  "title": "push_uint128 does not check that element is actually < 2^128, leading to data corruption",
+  "issueId": 272,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/272"
+}
