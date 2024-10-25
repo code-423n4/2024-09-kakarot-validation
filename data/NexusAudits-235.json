@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "NexusAudits",
+  "risk": "2",
+  "title": "Message Duplication and State Inconsistency During StarkNet Reorgs",
+  "issueId": 235,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/235"
+}
