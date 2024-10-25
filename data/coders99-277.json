@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "coders99",
+  "risk": "3",
+  "title": "\"Denial of Service (DoS) Vulnerabilities in `saturated_sub`, `initialize_jumpdests`, and `try_parse_destination_from_bytes` due to Unchecked Return Values, Improper Input Validation, and Potential Infinite Loops\"",
+  "issueId": 277,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/277"
+}
