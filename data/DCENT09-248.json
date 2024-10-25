@@ -1,0 +1,8 @@
+{
+  "contest": 438,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Denial of Service via Access List Parsing can lead to system downtime, inability to process legitimate transactions",
+  "issueId": 248,
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/248"
+}
