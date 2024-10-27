@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`decode_legacy_tx` allows validation of signatures with chain_id that are larger than felt, and overflows",
   "issueId": 264,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/264"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/264",
+  "validatedIssueId": 69,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/69"
 }
