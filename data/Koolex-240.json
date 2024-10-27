@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "SDIV Opcode Performs Unnecessary SMOD Computation Despite Only Needing Division",
   "issueId": 240,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/240"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/240",
+  "validatedIssueId": 73,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/73"
 }
