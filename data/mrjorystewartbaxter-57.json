@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Lack of verification for Invalid Points (Subgroup Checks) for coordinates can brick the ec_mul and ec_add operations",
   "issueId": 57,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/57"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/57",
+  "validatedIssueId": 93,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/93"
 }
