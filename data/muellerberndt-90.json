@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Insufficient input validation on transaction type allows for manipulation of relative jump offset",
   "issueId": 90,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/90"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/90",
+  "validatedIssueId": 90,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/90"
 }
