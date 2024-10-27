@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Underpaid Computation Attack Through Access List Manipulation",
   "issueId": 238,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/238"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/238",
+  "validatedIssueId": 97,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/97"
 }
