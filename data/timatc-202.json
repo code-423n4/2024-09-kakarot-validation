@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Underconstrained Hints in load_bytecode Function Allow Bytecode Manipulation",
   "issueId": 202,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/202"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/202",
+  "validatedIssueId": 80,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/80"
 }
