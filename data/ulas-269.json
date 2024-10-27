@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "L1 -> L2 messages do not have a balance check leading to balance overflow",
   "issueId": 269,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/269"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/269",
+  "validatedIssueId": 95,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/95"
 }
