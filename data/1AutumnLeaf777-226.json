@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Memory can still be charged for even if there is no expansion",
   "issueId": 226,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/226"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/226",
+  "validatedIssueId": 78,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/78"
 }
