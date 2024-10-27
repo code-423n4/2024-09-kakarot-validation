@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Out-of-Bounds Read in parse_storage_keys Function",
   "issueId": 192,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/192"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/192",
+  "validatedIssueId": 81,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/81"
 }
