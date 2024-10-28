@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Address aliasing should not applied to EOA account",
   "issueId": 126,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/126"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/126",
+  "validatedIssueId": 117,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/117"
 }
