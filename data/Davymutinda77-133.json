@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Unchecked External Call Success in execute_starknet_call and exec_precompile May Lead to Unexpected Behavior and Reentrancy Attacks",
   "issueId": 133,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/133"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/133",
+  "validatedIssueId": 115,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/115"
 }
