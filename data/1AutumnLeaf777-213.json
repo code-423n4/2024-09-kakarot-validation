@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "No way to cancel l1 -< l2 messages ",
   "issueId": 213,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/213"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/213",
+  "validatedIssueId": 105,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/105"
 }
