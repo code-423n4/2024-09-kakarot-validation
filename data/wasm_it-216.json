@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Cross-chain `sendMessageToL2` using bridge might fail due to not checking the msg.value passed by the users.",
   "issueId": 216,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/216"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/216",
+  "validatedIssueId": 104,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/104"
 }
