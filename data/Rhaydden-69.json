@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Incorrect block range check in BLOCKHASH Opcode implementation",
   "issueId": 69,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/69"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/69",
+  "validatedIssueId": 130,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/130"
 }
