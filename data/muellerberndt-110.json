@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Prover can cheat in felt_to_bytes_little due by underflowing value",
   "issueId": 110,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/110"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/110",
+  "validatedIssueId": 118,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/118"
 }
