@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Infinite mint by invoking `handle_l1_message` with an account with insufficient balance",
   "issueId": 224,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/224"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/224",
+  "validatedIssueId": 102,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/102"
 }
