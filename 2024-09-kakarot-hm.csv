@@ -1,0 +1,32 @@
+issue,title,primary finding,validator comment,status,root cause (URL),size,robotLabel
+validation-46,execute_starknet_call() always returns TRUE not actually checking the call result,,"If the system call failed, the whole tx woudl revert",Unsatisfactory,,28,:robot:_62_group
+validation-84,Nonce is mistakenly checked against the caller address even if it's a relayer,,"caller is the starknet account contract, which is the binding and representative of the related EVM account, the EVM account's data including nonce is stored in the starkent account.",Unsatisfactory,,31,:robot:_25_group
+validation-245,wrong implement of pop_n,,"statck size is ensured correct before the all of pop_n(), please check exec_opcode() function",Unsatisfactory,,34,:robot:_primary
+validation-85,The origin of the transaction is set to the caller address which can be a relayer,,"relayers can not call eth_send_transaction() dirrectly, the call account_contract.execute_from_outside()",Unsatisfactory,,38,:robot:_25_group
+validation-142,max_fee_per_gas is not checked to have a reasonable value potentially introducing overflow,,max_fee_per_gas is checked  at L273,Unsatisfactory,,43,:robot:_primary
+validation-117,Incorrect nonce increment on transaction failure,,"If revert, the nonce increased on L1024; otherwise it was already increased on L959",Unsatisfactory,,47,:robot:_38_group
+validation-106,account has Incorrect Assignment of code_hash in set_code Function Leading to Under-Constrained Computation,,"[ap_val - 2] is the return value of compute_code_hash(), which is the computed code hash",Unsatisfactory,,50,:robot:_primary
+validation-89,handle_l1_message() uses invalid hard-coded parameters for execution,findings-30,dup of findings-30,Satisfactory,https://github.com/kkrt-labs/kakarot/blob/7411a5520e8a00be6f5243a50c160e66ad285563/src/kakarot/interpreter.cairo#L950,50,:robot:_22_group
+validation-143,The check for the validity of the init code is incorrect,,"is_nn() mean >= 0, not > 0",Unsatisfactory,,52,:robot:_primary
+validation-69,BLOCKHASH Opcode does not comply with Kakarot spec,findings-37,dup of findings-37,Satisfactory,https://github.com/kkrt-labs/kakarot/blob/7411a5520e8a00be6f5243a50c160e66ad285563/src/kakarot/instructions/block_information.cairo#L167,54,:robot:_21_group
+validation-266,Use iteration instead of recursion in the parse_storage_keys function,,https://docs.cairo-lang.org/hello_cairo/intro.html#recursion-instead-of-loops,Unsatisfactory,,55,:robot:_primary
+validation-227,Karakot VM does not follow EIP-3651 making the coinbase payments more expensive for users,validation-227,The State.get_account(env.coinbase) call in interpreter.execute() before running txn warm up coinbase address,Unsatisfactory,,56,:robot:_primary
+validation-92,Intrinsic gas cost is mistakenly calculated when applying access list gas costs,,"The current implementation is correct, multiple storage keys could exist under one account key. Hence, in each recursion, one account key cost add multiple storage keys cost are added to cum",Unsatisfactory,,57,:robot:_06_group
+validation-125,Wrong gas price calculation in `eth_send_raw_unsigned_tx` could lead to suboptimal transaction pricing,,max_priority_fee_per_gas  is valid only when it is little than (max_fee_per_gas - base_fee),Unsatisfactory,,59,:robot:_47_group
+validation-221,Transient storage is not reset at the beginning of transaction execution,,"cairoVM process only one txn each time, no need to reset Transient storage",Unsatisfactory,,62,:robot:_primary
+validation-144,Gas may not fit into felt value when computing message call gas value,,L196 ensures it will not overflow,Unsatisfactory,,62,:robot:_primary
+validation-100,use memory safe in byteArrayToString,,Not essential,Unsatisfactory,,62,:robot:_primary
+validation-113,`selfdestruct` operation leaves contract bytecode intact,,"Since EIP6789, for contracts not created in same txn, SELFDESTRUCT does not delete any data (including storage keys, code, or the account itself)",Unsatisfactory,,63,:robot:_13_group
+validation-262,Insufficient validation of items_len,,"If items_len is not equal to 6 or 9, then the assert on L68 would fail",Unsatisfactory,,67,:robot:_primary
+validation-115,Incorrect stack handling for `CREATE` and `CREATE2` Opcodes in `exec_create` function,,"The current implementation is correct, please refer geth opCreate2() function",Unsatisfactory,,67,:robot:_primary
+validation-212,There are no static gas costs for TLOAD / TSTORE opcodes,,Gas are charged in exec_tstore() and exec_tload(),Unsatisfactory,,73,:robot:_primary
+validation-16,starknet Cairo has weak source of randomness detected in block timestamp and number,,not issue of kakarot,Unsatisfactory,,74,
+validation-71,Uninitialized caller starknet aaddress after account deployment in `cairo_precompile` function,,the deploy() function would return the new starknet address at [ap - 1],Unsatisfactory,,82,:robot:_primary
+validation-223,Access lists are not processed correctly according to the EIP-2929,,The State.get_account() calls in interpreter.execute() before running txn warm up from address and to address,Unsatisfactory,,84,:robot:_primary
+validation-107,gas has Under-Constrained Computation in memory_cost Function,,the words length is ensured reasonable in memory_expansion_cost_saturated(),Unsatisfactory,,90,:robot:_08_group
+validation-267,wrong implement of  priority_fee_per_gas,,Insufficient proof,Unsatisfactory,,113,:robot:_47_group
+validation-67,L2KakarotMessaging has Unrestricted Access to sendMessageToL1 Allows Unauthorized L2 to L1 Messaging,,The msg.sender is used for the target contract on L1 to distinguish if the message is sent from trusted L2 address,Unsatisfactory,,122,:robot:_primary
+validation-105,starknet has Under-Constrained Computations in Internal Function _save_valid_jumpdests,,Insufficient proof,Unsatisfactory,,125,:robot:_primary
+validation-62,DualVmToken has Unsafe Delegatecall to Untrusted Contract in approve,,"The starknetToken is initialized by contract deployer, it can be trusted",Unsatisfactory,,126,:robot:_69_group
+validation-66,DualVmToken has Unchecked transferFrom Allows Unauthorized Token Transfers,,no need access control,Unsatisfactory,,141,:robot:_primary
+validation-65,DualVmToken has Unchecked Transfer Allows Unauthorized Token Transfers,,no need access control ,Unsatisfactory,,150,:robot:_69_group
