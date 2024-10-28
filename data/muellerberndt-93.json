@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Malicious Starknet contract entered via Cairo precompile can replay legitimate transactions",
   "issueId": 93,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/93"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/93",
+  "validatedIssueId": 121,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/121"
 }
