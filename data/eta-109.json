@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Failure in Transaction Execution Due to Incorrect Caller Verification in `eth_send_raw_unsigned_tx` and `execute_from_outside` functions",
   "issueId": 109,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/109"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/109",
+  "validatedIssueId": 119,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/119"
 }
