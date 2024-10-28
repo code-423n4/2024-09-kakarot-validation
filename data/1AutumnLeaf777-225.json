@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Current memory length is computed incorrectly inside `calculate_gas_extend_memory`",
   "issueId": 225,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/225"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/225",
+  "validatedIssueId": 101,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/101"
 }
