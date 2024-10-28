@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Address aliasing is wrongfully applied even to EOAs",
   "issueId": 187,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/187"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/187",
+  "validatedIssueId": 111,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/111"
 }
