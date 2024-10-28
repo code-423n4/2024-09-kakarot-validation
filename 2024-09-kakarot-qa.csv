@@ -1,0 +1,18 @@
+issue,title,validator comment,status,size,Best
+validation-214,QA Report,0L,Unsatisfactory,8,✰✰✰
+validation-273,QA Report,0L,Unsatisfactory,16,✰✰✰
+validation-210,QA Report,0L,Unsatisfactory,22,✰✰✰
+validation-119,QA Report,0L,Unsatisfactory,30,✰✰✰
+validation-118,QA Report,1L(1),Unsatisfactory,36,✰✰✰
+validation-207,QA Report,0L,Unsatisfactory,39,✰✰✰
+findings-46,QA Report,"2L(2, 4)",Unsatisfactory,45,✰✰✰
+validation-112,Gas Optimizations,0L,Unsatisfactory,51,✰✰✰
+validation-201,QA Report,"3L(1,2,2)",Satisfactory,66,✰✰✰
+findings-66,QA Report,"1H(2),  4L(1,3,4,5)",Satisfactory,70,★★★
+validation-265,QA Report,1M(1),Satisfactory,122,✰✰✰
+validation-96,Gas Optimizations,1L(1),Unsatisfactory,138,✰✰✰
+validation-145,Gas Optimizations,1L(1),Unsatisfactory,188,✰✰✰
+findings-43,QA Report,"4L(1,2,3,4)",Satisfactory,205,✰✰✰
+validation-75,QA Report,0L,Unsatisfactory,234,✰✰✰
+validation-259,QA Report,"M(2,7) L(3,6,8)",Satisfactory,523,✰✰✰
+validation-8,QA Report,0L,Unsatisfactory,230,✰✰✰
