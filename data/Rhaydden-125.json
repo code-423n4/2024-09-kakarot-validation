@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Wrong gas price calculation in `eth_send_raw_unsigned_tx` could lead to suboptimal transaction pricing",
   "issueId": 125,
-  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/125"
+  "issueUrl": "https://github.com/code-423n4/2024-09-kakarot-validation/issues/125",
+  "validatedIssueId": 133,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-09-kakarot-findings/issues/133"
 }
